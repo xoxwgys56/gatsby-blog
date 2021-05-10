@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'I am Dan Kim',
-    description: "Dan Kim's blog",
+    description: "Dan Kim's blog (공사중입니다.)",
     siteUrl: 'https://dankim.gtsb.io', 
   },
   mapping: {

@@ -12,3 +12,5 @@ Let's rebuild it.
 - is there more easy way to add post (mdx)
 - 404 page
 - image processing
+- draft인 것과 아닌 것을 구분할 필요.
+- 카테고리 별로 글 구분하여 정리하기
