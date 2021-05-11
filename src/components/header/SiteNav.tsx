@@ -13,6 +13,9 @@ import { Twitter } from '../icons/twitter';
 import { SubscribeModal } from '../subscribe/SubscribeModal';
 import { SiteNavLogo } from './SiteNavLogo';
 
+declare module '*.otf';
+import NotoSansKR from '../../fonts/NotoSansKR-Regular.otf';
+
 interface SiteNavProps {
   isHome?: boolean;
   isPost?: boolean;
@@ -86,12 +89,14 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
         {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
         <nav css={SiteNavStyles}>
           <SiteNavLeft className="site-nav-left">
-            {!isHome && <SiteNavLogo />}
+            {isHome && <SiteNavLogo />}
             <SiteNavContent css={[this.state.showTitle ? HideNav : '']}>
               <ul css={NavStyles} role="menu">
-                <li role="menuitem">
+                {
+                  isHome ? (<></>): (<li role="menuitem">
                   <Link to="/" activeClassName="nav-current">Home</Link>
-                </li>
+                </li>)
+                }
                 <li role="menuitem">
                   <Link to="/about" activeClassName="nav-current">About</Link>
                 </li>
