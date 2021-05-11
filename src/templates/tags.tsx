@@ -102,9 +102,17 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
               <SiteTitle className="site-title">{tag}</SiteTitle>
               <SiteDescription className="site-description">
                 {tagData?.node.description ? (
-                  tagData.node.description
-                ) : (
                   <>
+                    A collection of {totalCount > 1 && `${totalCount} posts`}
+                    {totalCount === 1 && '1 post'}
+                    {totalCount === 0 && 'No posts'}
+                    <br></br>
+                    <br></br>
+                    {tagData.node.description}
+                  </>
+                ) : (
+                    <>
+                      <br></br>
                     A collection of {totalCount > 1 && `${totalCount} posts`}
                     {totalCount === 1 && '1 post'}
                     {totalCount === 0 && 'No posts'}
@@ -117,6 +125,7 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
         <main id="site-main" css={[SiteMain, outer]}>
           <div css={inner}>
             <div css={[PostFeed]}>
+              {console.log('edges', edges.map(({node}) => (node)))}
               {edges.map(({ node }) => (
                 <PostCard key={node.fields.slug} post={node} />
               ))}

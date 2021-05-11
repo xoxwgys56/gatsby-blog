@@ -306,6 +306,10 @@ export const PostFullHeader = styled.header`
   @media (max-width: 500px) {
     padding: 20px 0 35px;
   }
+
+  a:hover {
+    text-decoration: none;
+  }
 `;
 
 const PostFullTags = styled.section`

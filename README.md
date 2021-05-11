@@ -8,9 +8,9 @@ Let's rebuild it.
 - article title prefix
   - like `Python` some-title
 - implementation article category view
-- note block
+- custom note block
 - is there more easy way to add post (mdx)
-- 404 page
-- image processing
+- image 중앙 정렬
 - draft인 것과 아닌 것을 구분할 필요.
 - 카테고리 별로 글 구분하여 정리하기
+- tags 페이지가 정상적으로 안나옴

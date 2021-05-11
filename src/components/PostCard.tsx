@@ -94,6 +94,10 @@ const PostCardStyles = css`
   padding: 0 20px 40px;
   min-height: 220px;
   background-size: cover;
+
+  a:hover {
+    text-decoration: none;
+  }
 `;
 
 const PostCardLarge = css`
@@ -144,6 +148,10 @@ const PostCardLarge = css`
       font-size: 1.8rem;
       line-height: 1.5em;
     }
+
+    a:hover {
+      text-decoration: none;
+    }
   }
 `;
 
@@ -176,10 +184,6 @@ const PostCardContentLink = css`
   display: block;
   /* color: var(--darkgrey); */
   color: ${colors.darkgrey};
-
-  :hover {
-    text-decoration: none;
-  }
 `;
 
 const PostCardPrimaryTag = styled.div`
