@@ -2,6 +2,10 @@
 
 Let's rebuild it.
 
+## NOTE
+
+- /img 아래에 README 두지 말 것.
+
 ## TODO
 
 - open tab at new tab
