@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Python datetime
-image: img/testimg-cover.jpg
+image: img/python-default.jpeg
 author: [Dan]
 date: 2021-05-02
 tags:

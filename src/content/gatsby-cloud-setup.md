@@ -3,7 +3,7 @@ layout: post
 title: 'Gatsby Cloud setup'
 author: [Dan]
 tags: ['gatsby']
-image: img/welcome-to-ghost.jpg
+image: img/marvin-meyer-794521-unsplash.jpg
 date: '2021-05-09'
 draft: false
 excerpt: 개츠비 클라우드를 이용해서 블로그를 생성해보자.

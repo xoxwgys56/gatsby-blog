@@ -3,7 +3,7 @@ layout: post
 title: 'Python regex for digit with position'
 author: [Dan]
 tags: ['python', 'builtIn', 'regex']
-image: img/welcome-to-ghost.jpg
+image: img/default-space-unsplash.jpeg
 date: '2021-05-10'
 draft: false
 excerpt: get digit and its position using regex
@@ -19,7 +19,7 @@ import re
 # p = re.compile(r'\d')
 # for m in p.finditer('a1b2c3d4'):
 #    ...
-# 
+#
 # both codes are same work.
 # but below code is more shorter.
 

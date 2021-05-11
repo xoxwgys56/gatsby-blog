@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'private' 상속
-image: img/callum-shaw-555357-unsplash.jpg
+title: '"private" 상속'
+image: img/shot-by-cerqueira-hTz9w338qTw-unsplash.jpeg
 author: [Dan]
 date: 2021-05-11
 tags: ['python', 'designPattern']

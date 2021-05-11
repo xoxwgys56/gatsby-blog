@@ -3,7 +3,7 @@ layout: post
 title: 'Python nested class'
 author: [Dan]
 tags: ['python', 'dataStructure']
-image: img/welcome-to-ghost.jpg
+image: img/python-default.jpeg
 date: '2021-05-10'
 draft: false
 excerpt: 파이썬 내부 클래스에 대해

@@ -3,7 +3,7 @@ layout: post
 title: 'Should `import` statements always at the top?'
 author: [Dan]
 tags: ['python']
-image: img/welcome-to-ghost.jpg
+image: img/python-default.jpeg
 date: '2021-05-06'
 draft: false
 excerpt: why import statement always at the top of code?

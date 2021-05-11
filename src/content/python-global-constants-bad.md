@@ -3,7 +3,7 @@ layout: post
 title: '전역 상수는 나쁜 것일까?'
 author: [Dan]
 tags: ['python']
-image: img/welcome-to-ghost.jpg
+image: img/python-default.jpeg
 date: '2021-05-06'
 draft: false
 excerpt: why?

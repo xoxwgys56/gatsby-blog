@@ -3,7 +3,7 @@ layout: post
 title: 'Python append item without duplicates'
 author: [Dan]
 tags: ['python', 'builtIn']
-image: img/welcome-to-ghost.jpg
+image: img/python-default.jpeg
 date: '2021-05-10'
 draft: false
 excerpt: 중복없이 리스트에 아이템을 추가하는 방법.

@@ -3,7 +3,7 @@ layout: post
 title: 'Linux append text files'
 author: [Dan]
 tags: ['linux']
-image: img/welcome-to-ghost.jpg
+image: img/default-space-unsplash.jpeg
 date: '2021-05-05'
 draft: false
 excerpt: linux bash에서 텍스트 파일을 합치는 명령어

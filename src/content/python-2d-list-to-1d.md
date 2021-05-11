@@ -3,7 +3,7 @@ layout: post
 title: 'Python 2d list to 1d'
 author: [Dan]
 tags: ['python', 'builtIn']
-image: img/welcome-to-ghost.jpg
+image: img/python-default.jpeg
 date: '2021-05-10'
 draft: false
 excerpt: 2차원 리스트를 1차원으로 줄이자.

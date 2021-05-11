@@ -3,7 +3,7 @@ layout: post
 title: 'Python Define Constants'
 author: [Dan]
 tags: ['python', 'designPattern']
-image: img/welcome-to-ghost.jpg
+image: img/python-default.jpeg
 date: '2021-05-06'
 draft: false
 excerpt: 파이썬에서 어떻게하면 상수를 선언할 수 있는지 알아본다.

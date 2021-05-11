@@ -3,7 +3,7 @@ layout: post
 title: 'Python mapping'
 author: [Dan]
 tags: ['python', 'builtIn']
-image: img/welcome-to-ghost.jpg
+image: img/python-default.jpeg
 date: '2021-05-10'
 draft: true
 excerpt: 파이썬 내부 클래스에 대해
@@ -18,10 +18,10 @@ The term "mapping" is described [here](https://docs.python.org/3/glossary.html#
 The requirements to subclass `collections.abc.Mapping` are described in its docstring:
 
 > """A Mapping is a generic container for associating key/value
-pairs.
+> pairs.
 
 This class provides concrete generic implementations of all
-methods except for __getitem__, __iter__, and __len__.
+methods except for **getitem**, **iter**, and **len**.
 
 """
 

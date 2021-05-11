@@ -3,7 +3,7 @@ layout: post
 title: 'What is Chakra?'
 author: [Dan]
 tags: ['framework']
-image: img/welcome-to-ghost.jpg
+image: img/default-space-unsplash.jpeg
 date: '2021-05-10'
 draft: false
 excerpt: 챠크라 UI?
@@ -15,20 +15,20 @@ excerpt: 챠크라 UI?
 
 ```bash
 npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
-# or 
+# or
 yarn add @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^4
 ```
 
 ```jsx
-import * as React from "react"
+import * as React from 'react';
 // 1. import `ChakraProvider` component
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider } from '@chakra-ui/react';
 function App() {
   // 2. Use at the root of your app
   return (
     <ChakraProvider>
       <App />
     </ChakraProvider>
-  )
+  );
 }
 ```

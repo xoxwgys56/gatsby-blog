@@ -3,7 +3,7 @@ layout: post
 title: 'Python what is metaclass'
 author: [Dan]
 tags: ['python', 'designPattern']
-image: img/welcome-to-ghost.jpg
+image: img/felipe-castilla-UpJj3u1T-R8-unsplash.jpeg
 date: '2021-05-11'
 draft: false
 excerpt: 파이썬 메타클래스는 무엇이고, 어떻게 쓰는 것일까
