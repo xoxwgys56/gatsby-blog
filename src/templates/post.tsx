@@ -13,7 +13,7 @@ import { Footer } from '../components/Footer';
 import SiteNav, { SiteNavMain } from '../components/header/SiteNav';
 import PostContent from '../components/PostContent';
 import { ReadNext } from '../components/ReadNext';
-import { Subscribe } from '../components/subscribe/Subscribe';
+// import { Subscribe } from '../components/subscribe/Subscribe';
 import { Wrapper } from '../components/Wrapper';
 import IndexLayout from '../layouts';
 import { colors } from '../styles/colors';
@@ -225,20 +225,20 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                   </section>
                 </PostFullByline>
               </PostFullHeader>
-
               {post.frontmatter.image?.childImageSharp && (
                 <PostFullImage>
                   <Img
                     style={{ height: '100%' }}
                     fluid={post.frontmatter.image.childImageSharp.fluid}
                     alt={post.frontmatter.title}
+                    loading={'lazy'}
                   />
                 </PostFullImage>
               )}
               <PostContent htmlAst={post.htmlAst} />
 
               {/* The big email subscribe modal content */}
-              {config.showSubscribe && <Subscribe title={config.title} />}
+              {/* {config.showSubscribe && <Subscribe title={config.title} />} */}
             </article>
           </div>
         </main>
@@ -305,6 +305,10 @@ export const PostFullHeader = styled.header`
 
   @media (max-width: 500px) {
     padding: 20px 0 35px;
+  }
+
+  a:hover {
+    text-decoration: none;
   }
 `;
 
@@ -420,7 +424,7 @@ export const PostFullTitle = styled.h1`
 
 const PostFullImage = styled.figure`
   margin: 25px 0 50px;
-  height: 800px;
+  height: 260px;
   background: ${colors.lightgrey} center center;
   background-size: cover;
   border-radius: 5px;
@@ -434,11 +438,11 @@ const PostFullImage = styled.figure`
   }
 
   @media (max-width: 800px) {
-    height: 400px;
+    height: 160px;
   }
   @media (max-width: 500px) {
     margin-bottom: 4vw;
-    height: 350px;
+    height: 120px;
   }
 `;
 

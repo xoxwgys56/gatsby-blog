@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: 'I am Dan Kim',
     description: "Dan Kim's blog (공사중입니다.)",
-    siteUrl: 'https://dankim.gtsb.io', 
+    siteUrl: 'https://dankim.gtsb.io',
   },
   mapping: {
     'MarkdownRemark.frontmatter.author': 'AuthorYaml',
@@ -142,5 +142,13 @@ module.exports = {
         siteSpeedSampleRate: 10,
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Noto Sans KR', 'Noto Serif KR', 'Roboto']
+        }
+      }
+    }
   ],
 };

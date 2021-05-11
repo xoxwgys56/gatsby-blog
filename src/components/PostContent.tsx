@@ -34,7 +34,7 @@ export const PostFullContent = styled.section`
   margin: 0 auto;
   padding: 0 170px 6vw;
   min-height: 230px;
-  font-family: Georgia, serif;
+  font-family: "Noto Sans KR", Georgia, serif;
   font-size: 2rem;
   line-height: 1.6em;
   background: #fff;

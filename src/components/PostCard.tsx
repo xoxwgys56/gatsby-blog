@@ -94,6 +94,10 @@ const PostCardStyles = css`
   padding: 0 20px 40px;
   min-height: 220px;
   background-size: cover;
+
+  a:hover {
+    text-decoration: none;
+  }
 `;
 
 const PostCardLarge = css`
@@ -144,6 +148,10 @@ const PostCardLarge = css`
       font-size: 1.8rem;
       line-height: 1.5em;
     }
+
+    a:hover {
+      text-decoration: none;
+    }
   }
 `;
 
@@ -176,10 +184,6 @@ const PostCardContentLink = css`
   display: block;
   /* color: var(--darkgrey); */
   color: ${colors.darkgrey};
-
-  :hover {
-    text-decoration: none;
-  }
 `;
 
 const PostCardPrimaryTag = styled.div`
@@ -196,6 +200,7 @@ const PostCardTitle = styled.h2`
   margin: 0 0 0.4em;
   line-height: 1.15em;
   transition: color 0.2s ease-in-out;
+  font-family: "Roboto";
 
   @media (prefers-color-scheme: dark) {
     color: rgba(255, 255, 255, 0.85);
@@ -203,7 +208,7 @@ const PostCardTitle = styled.h2`
 `;
 
 const PostCardExcerpt = styled.section`
-  font-family: Georgia, serif;
+  font-family: "Noto Serif KR", Georgia, serif;
 
   @media (prefers-color-scheme: dark) {
     /* color: color(var(--midgrey) l(+10%)); */

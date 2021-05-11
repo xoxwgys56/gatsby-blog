@@ -3,7 +3,10 @@
   image: img/speeches-cover.jpg
 - id: python
   description: Python programming language.
+  image: img/python-background.jpeg
 - id: designPattern
   description: programming design pattern
 - id: builtIn
   description: include built in function, class etc.
+- id: gatsby
+  description: gatsby fronted framework 
