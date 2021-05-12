@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Pulumi Concept [번역]'
+title: '[번역] Pulumi Concept'
 author: [Dan]
 tags: ['pulumi', 'IaC']
 image: img/background/pulumi-background.png

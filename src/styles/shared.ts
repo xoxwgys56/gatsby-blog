@@ -87,11 +87,15 @@ export const PostFeed = css`
 export const SocialLink = css`
   display: inline-block;
   margin: 0;
-  padding: 10px;
+  padding: 10px 12px;
   opacity: 0.8;
-
+  font-size: 1.75rem;
+  font-family: "Roboto";
+  color: #fff;
+  
   :hover {
     opacity: 1;
+    text-decoration: none;
   }
 
   svg {

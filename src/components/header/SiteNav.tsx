@@ -13,8 +13,6 @@ import { Twitter } from '../icons/twitter';
 import { SubscribeModal } from '../subscribe/SubscribeModal';
 import { SiteNavLogo } from './SiteNavLogo';
 
-declare module '*.otf';
-import NotoSansKR from '../../fonts/NotoSansKR-Regular.otf';
 
 interface SiteNavProps {
   isHome?: boolean;
@@ -122,7 +120,32 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   title="Facebook"
                   rel="noopener noreferrer"
                 >
-                  <Facebook />
+                  Facebook
+                  {/* <Facebook /> */}
+                </a>
+              )}
+              {config.facebook && (
+                <a
+                  className="social-link-fb"
+                  css={[SocialLink, SocialLinkFb]}
+                  href={config.instagram}
+                  target="_blank"
+                  title="Instagram"
+                  rel="noopener noreferrer"
+                >
+                  Instagram
+                </a>
+              )}
+              {config.facebook && (
+                <a
+                  className="social-link-fb"
+                  css={[SocialLink, SocialLinkFb]}
+                  href={config.github}
+                  target="_blank"
+                  title="Github"
+                  rel="noopener noreferrer"
+                >
+                  Github
                 </a>
               )}
               {config.twitter && (
