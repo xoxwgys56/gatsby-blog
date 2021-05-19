@@ -23,6 +23,14 @@ export interface WebsiteConfig {
   /**
    * hide or show all email subscribe boxes
    */
+  instagram?: string;
+  /**
+   * add custom instagram link
+   */
+  github?: string;
+  /**
+  * add custom github link
+  */
   showSubscribe: boolean;
   /**
    * create a list on mailchimp and then create an embeddable signup form. this is the form action
@@ -56,6 +64,8 @@ const config: WebsiteConfig = {
   lang: 'en',
   siteUrl: 'https://gatsby-casper.netlify.com',
   facebook: 'https://www.facebook.com/tkrhkdjanr',
+  instagram: 'https://www.instagram.com/tkrhkdjanr/',
+  github: 'https://github.com/xoxwgys56',
   // twitter: 'https://twitter.com/tryghost',
   showSubscribe: false,
   // mailchimpAction: 'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
