@@ -57,11 +57,17 @@ const About: React.FC = () => (
             <PostFullContent className="post-full-content">
               <div className="post-content">
                 <h5>
-                  Hi I am Dan Kim. <br /> GitHub: <a href="https://github.com/xoxwgys56">xoxwgys56</a>
+                  Hi I am Dan Kim.
                 </h5>
                 <p>
                   It is really pleasure to me. you visit this blog. I hope my article can be some help for you.
                 </p>
+                <h3>GitHub : 
+                  <a href="https://github.com/xoxwgys56">xoxwgys56</a>
+                </h3>
+                <h3>LinkedIn : 
+                  <a href="https://www.linkedin.com/in/daewon-kim-3198851a3/">Daewon Kim</a>
+                </h3>
               </div>
             </PostFullContent>
           </article>
