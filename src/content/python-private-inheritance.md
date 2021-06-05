@@ -1,16 +1,16 @@
 ---
 layout: post
-title: '"private" 상속'
+title: '"private" in python'
 image: img/shot-by-cerqueira-hTz9w338qTw-unsplash.jpeg
 author: [Dan]
 date: 2021-05-11
 tags: ['python', 'designPattern']
-excerpt: meaning of private in Python
+excerpt: '"name mangling"에 대해 알아봅니다.'
 ---
 
 > [https://stackoverflow.com/questions/20261517/inheritance-of-private-and-protected-methods-in-python](https://stackoverflow.com/questions/20261517/inheritance-of-private-and-protected-methods-in-python)
 
-# Question
+## Question
 
 ```python
 class Parent(object):
@@ -29,7 +29,9 @@ class Child(Parent):
                             # 'Child' object has no attribute '_Child__private'
 ```
 
-# Answer
+---
+
+## Answer
 
 > 아래는 원문을 번역한 내용이다. 번역이 매끄럽지 못한 점 양해 바랍니다.
 
@@ -86,14 +88,6 @@ _공식 번역은 뒤섞기라고 번역되어 있다._
 
 [PEP 8 Python Style Guide](https://www.python.org/dev/peps/pep-0008/#id49) 에서 이 `private name mangling` 에 대해 말하고 있다.
 
-### original
-
-If your class is intended to be subclassed, and you have attributes that you do not want subclasses to use, consider naming them with double leading underscores and no trailing underscores. This invokes Python's name mangling algorithm, where the name of the class is mangled into the attribute name. This helps avoid attribute name collisions should subclasses inadvertently contain attributes with the same name.
-
-- Note 1: Note that only the simple class name is used in the mangled name, so if a subclass chooses both the same class name and attribute name, you can still get name collisions.
-- Note 2: Name mangling can make certain uses, such as debugging and **getattr**(), less convenient. However the name mangling algorithm is well documented and easy to perform manually.
-- Note 3: Not everyone likes name mangling. Try to balance the need to avoid accidental name clashes with potential use by advanced callers.
-
 ### translated
 
 만약 너의 클래스가 서브클래스로 의도한거라면, 그리고 너의 서브클래스가 속성들을 가지지 않길 원한다면, `__<name>` 을 고려해봐라. 이것은 파이썬의 이름 `mangling` 알고리즘을 호출한다. (`_className__name` 을 생성하는 알고리즘이겠지...) 클래스 이름이 속성명 안에 뒤섞는다. (어느 정도 mixed in 된다는 뜻을 내포하는듯)
@@ -103,3 +97,11 @@ If your class is intended to be subclassed, and you have attributes that you do 
 - Note 1 : 간단한 클래스 이름만이 오직 `mangled name` 되어 사용된다는 것을 명심하라. 그러므로 만약 서브클래스가 똑같은 클래스명과 속성명을 선택한다면, 여전히 이름 충돌이 생기는 것이다.
 - Note 2 : `Name mangling` 은 특정 기능으로 쓸 수 있다. 가령 디버깅 그리고 `__getattr__()` , 덜 간편한. 그러나 `name mangling` 알고리즘은 문서화가 잘되어 있고 쉽게 동작하도록 할 수 있다. (번역이 매끄럽지 못하다.
 - Note 3 : 모두가 `name mangling` 을 좋아하진 않는다. 좋은 콜러에 의해 잠재적 사용에 의한 이름 충돌을 피하도록 시도해보라.
+
+### original
+
+If your class is intended to be subclassed, and you have attributes that you do not want subclasses to use, consider naming them with double leading underscores and no trailing underscores. This invokes Python's name mangling algorithm, where the name of the class is mangled into the attribute name. This helps avoid attribute name collisions should subclasses inadvertently contain attributes with the same name.
+
+- Note 1: Note that only the simple class name is used in the mangled name, so if a subclass chooses both the same class name and attribute name, you can still get name collisions.
+- Note 2: Name mangling can make certain uses, such as debugging and **getattr**(), less convenient. However the name mangling algorithm is well documented and easy to perform manually.
+- Note 3: Not everyone likes name mangling. Try to balance the need to avoid accidental name clashes with potential use by advanced callers.
