@@ -62,12 +62,20 @@ const About: React.FC = () => (
                 <p>
                   It is really pleasure to me. you visit this blog. I hope my article can be some help for you.
                 </p>
-                <h3>GitHub : 
-                  <a href="https://github.com/xoxwgys56">xoxwgys56</a>
-                </h3>
-                <h3>LinkedIn : 
-                  <a href="https://www.linkedin.com/in/daewon-kim-3198851a3/">Daewon Kim</a>
-                </h3>
+                <ul>
+                  <li>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/xoxwgys56">xoxwgys56</a>
+                  </li>
+                  <li>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/daewon-kim-3198851a3/">Daewon Kim</a>
+                  </li>
+                  <li>
+                    <h3>Portfolio</h3>
+                    <a href="https://xoxwgys56.github.io/ddongule-simple-portfolio/">Portfolio</a>
+                  </li>
+                </ul>
               </div>
             </PostFullContent>
           </article>
