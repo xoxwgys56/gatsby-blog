@@ -20,3 +20,4 @@ Let's rebuild it.
 - [ ] 카테고리 별로 글 구분하여 정리하기
 - [ ] 개츠비 게시물 내의 이미지 다 깨짐.
 - [ ] add github link on nav
+- [ ] create id of each h2 for using anchor
